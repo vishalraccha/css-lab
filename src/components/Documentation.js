@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Components from './Components'
 import "./documentation.css"
 
@@ -2842,7 +2841,6 @@ button:active {
 
   return (
     <>
-    <Navbar/>
       <div className="doccontainer">
       
       {code.map((element, index) => (

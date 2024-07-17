@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
 import "./About.css"
 const About=()=> {
   return (
     <>
-      <Navbar/>
       <div className="about_main">
         <label>Developer - Vishal Raccha</label>
         <div className="infoabout">

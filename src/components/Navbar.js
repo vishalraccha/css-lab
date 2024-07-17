@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-function Navbar({ onNavigate }) {
-  let [open, setOpen] = useState(false);
+function Navbar({ onNavigate, currentPage }) {
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="w-full top-0 left-0">
@@ -19,19 +19,21 @@ function Navbar({ onNavigate }) {
         <ul
           className={`ulnav md:flex md:items-center md:pb-0 text-center md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ${
             open ? "top-20 opacity-100 block" : "top-10 absolute"
-          } md:opacity-100 opacity-0`}
+          } md:opacity-100 opacity-0`} 
         >
           <li className="navitem md:ml-8">
-            <button onClick={() => onNavigate('home')}>Home</button>
+            <button onClick={() => onNavigate("home")}>Home</button>
           </li>
           <li className="navitem md:ml-8">
-            <button onClick={() => onNavigate('documentation')}>Documentation</button>
+            <button onClick={() => onNavigate("documentation")}>
+              Documentation
+            </button>
           </li>
           <li className="navitem md:ml-8">
-            <button onClick={() => onNavigate('about')}>About</button>
+            <button onClick={() => onNavigate("about")}>About</button>
           </li>
           <li className="navitem codeedi md:ml-8">
-            <button onClick={() => onNavigate('code-editor')}>
+            <button onClick={() => onNavigate("code-editor")}>
               <ion-icon name="code-slash-outline"></ion-icon>
             </button>
           </li>
