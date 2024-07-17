@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+.component {
+    width: 40%;
+    height: 570px;
+    margin: 10px;
+}
+
+.component-body {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 35, 39);
+    width: 100%;
+    height: 570px;
+    color: white;
+    overflow: hidden;
+
+}
+
+
+
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* padding: 2px; */
+}
+
+.codingpart {
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    height: 570px;
+
+    background-color: rgb(35, 35, 39);
+}
+
+.codingpart label ion-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+
+.codingpart .html {
+    border-radius: 10px;
+    width: 100%;
+    height: 490px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(7, 8, 8);
+    font-family: "Source Code Pro", monospace;
+}
+ul li{
+    font-size: 1.3rem;
+    color: white;
+}
+.codingpart .css {
+    width: 100%;
+    border-radius: 10px;
+    height: 490px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 7px;
+    background-color: rgb(7, 8, 8);
+    font-family: "Source Code Pro", monospace;
+}
+
+
+
+.codingpart .html::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(83, 83, 87);
+}
+
+.codingpart .css::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(83, 83, 87);
+}
+
+.tabs ul {
+    display: flex;
+    margin: 5px;
+}
+
+.tabs ul li {
+    margin: 0 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.show-content {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    .edit {
+        display: block;
+        padding: 2px;
+        height: auto;
+    }
+
+    .codingpart .html {
+        width: 100%;
+        height: 400px;
+    }
+
+    .codingpart .css {
+        width: 100%;
+        height: 400px;
+    }
+
+    .component {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .codingpart {
+        height: 480px;
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+
+}

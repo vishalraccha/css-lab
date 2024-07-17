@@ -1,0 +1,246 @@
+.animationsec h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 50px 50px;
+    text-align: center;
+    /* background-color: red; */
+    background: linear-gradient(to right, #22e014, #03eb7f, #01c298, #08c6a3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.third {
+    margin-top: 190px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.animationsec {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+
+.animated-text {
+    font-size: 3.5rem;
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+    text-align: center;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 80px;
+    background-color: rgb(15, 18, 25);
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #03030300;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Simplifies development.";
+    }
+
+    21%,
+    40% {
+        content: "Responsive design.";
+    }
+
+    41%,
+    60% {
+        content: "Pre-styled components.";
+    }
+
+    61%,
+    80% {
+        content: "Reliable choice.";
+    }
+
+    81%,
+    100% {
+        content: "Easy to use.";
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+.infotextthird {
+    width: 50%;
+    height: auto;
+    /* background-color: #fff; */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.infotextthird p {
+    font-size: 1.5rem;
+}
+
+/* 
+@property --progress {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+:root {
+    --c1: #00ff1e;
+    --c2: #00ff1e;
+    --c3: #00ff1e;
+    --c4: #00ff1e;
+}
+
+@keyframes progress {
+    from {
+        --progress: 0%;
+    }
+
+    to {
+        --progress: 100%;
+    }
+}
+
+.circle {
+    --progress: 10%;
+
+    @supports (background: paint(houdini)) {
+        --progress: 0%;
+    }
+
+    background: conic-gradient(at center,
+        var(--c1) var(--progress),
+        black var(--progress),
+        var(--c2) calc(var(--progress) + 20%),
+        var(--c3) calc(var(--progress) + 30%),
+        var(--c3) calc(var(--progress) + 20%),
+        transparent,
+        transparent,
+        transparent,
+        transparent);
+    animation: progress 4s linear infinite;
+    border-radius: 50%;
+    mask: radial-gradient(circle at center, transparent 65%, rgb(255, 255, 255) 65%);
+    position: absolute;
+    inset: 0;
+
+    &:nth-child(2) {
+        inset: 4vmin;
+        animation-delay: 1s;
+    }
+
+    &:nth-child(3) {
+        inset: 8vmin;
+        animation-delay: 0.5s;
+    }
+}
+
+.anim {
+    filter: drop-shadow(0 0 0.9vmin rgb(0, 255, 55));
+    position: relative;
+    margin-left: 70px;
+    width: 50%;
+    aspect-ratio: 1;
+
+    &:after {
+        content: "CSS-LAB";
+        font-weight: bold;
+        position: absolute;
+        font-size: 1.7rem;
+        inset: 0;
+        color: rgb(255, 255, 255);
+        display: grid;
+        place-items: center;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    .third {
+        display: block;
+    }
+
+     .animationsec h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    /*
+    .anim {
+        margin-left: 20px;
+        width: 80%;
+        overflow: hidden;
+    } */
+
+    .animationsec {
+        width: 100%;
+    }
+
+    .animated-text {
+        margin-top: 40px;
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+    }
+
+    .infotextthird {
+        text-align: justify;
+        margin-top: 60px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+.mainfour {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* background-color: gray; */
+    align-items: center;
+}
+
+.fourth {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 250px 10px;
+    
+}
+
+
+.headtext {
+    /* color: white; */
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 40px;
+    background: linear-gradient(to right, #49dcb0, #03eb7f, #3569d1, #7408c6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+
+.fourth *,
+.fourth *:before,
+.fourth *:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.layeredanim {
+    width: 100%;
+    height: auto;
+}
+
+.layeredanim {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transform: scale(2.6);
+}
+
+.ell,
+#ai {
+    fill: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .mainfour {
+        width: 100%;
+        height: 700px;
+        display: block;
+        /* background-color: gray; */
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainfour {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* background-color: gray; */
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .headtext {
+        font-size: 2rem;
+    }
+
+    .fourth {
+        margin: 150px 1px;
+    }
+}
